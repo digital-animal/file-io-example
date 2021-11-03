@@ -1,0 +1,11 @@
+ID,Name,Age,Sex,Dept,Email
+101,Alex,26,Male,CSE,alex@email.com
+102,Lee,24,Male,CSE,lee@email.com
+103,Cooper,21,Male,EEE,cooper@email.com
+104,David,29,Male,ME,david@email.com
+105,Shaun,22,Male,CE,shaun@email.com
+106,John,23,Male,CSE,john@email.com
+107,Mary,19,Female,CSE,mary@email.com
+108,Hannah,25,Female,EEE,hannah@email.com
+109,Jane,26,Female,ME,jane@email.com
+110,Anna,24,Female,CE,anna@email.com

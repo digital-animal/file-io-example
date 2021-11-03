@@ -1,0 +1,3 @@
+welcome to java programming language.
+java is a versatile language. it supports
+smoot file input and output operations.

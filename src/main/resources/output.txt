@@ -1,0 +1,5 @@
+WELCOME TO JAVA PROGRAMMING LANGUAGE.
+JAVA IS A VERSATILE LANGUAGE. IT SUPPORTS
+SMOOT FILE INPUT AND OUTPUT OPERATIONS.welcome to java programming language.
+java is a versatile language. it supports
+smoot file input and output operations.

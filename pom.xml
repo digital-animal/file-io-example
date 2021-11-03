@@ -1,0 +1,107 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.zahid</groupId>
+  <artifactId>input-output-example</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>input-output-example</name>
+  <url>http://maven.apache.org</url>
+
+
+
+<!-- # Java Version, JUnit5 Version, UTF-8 Encoding --> 
+<properties>
+  <maven.compiler.source>17</maven.compiler.source>
+  <maven.compiler.target>17</maven.compiler.target>
+  <junit.jupiter.version>5.8.1</junit.jupiter.version>
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+</properties>
+
+<build>
+  <pluginManagement>
+    <plugins>
+
+      <!-- # maven exec plugin for running main with custom configuration -->
+      <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>3.0.0</version>
+          <configuration>
+              <mainClass>com.zahid.Main</mainClass>
+              <mainClass>com.zahid.fileio.FileInputExample</mainClass>
+              <mainClass>com.zahid.fileio.FileOutputExample</mainClass>
+              <mainClass>com.zahid.fileio.FileReaderExample</mainClass>
+              <mainClass>com.zahid.fileio.FileWriterExample</mainClass>
+              <mainClass>com.zahid.filecopy.FileCopyExample</mainClass>
+              <mainClass>com.zahid.filecopy.DualFileCopyExample</mainClass>
+              <mainClass>com.zahid.buffer.BufferedStreamExample</mainClass>
+              <mainClass>com.zahid.buffer.BufferedReaderExample</mainClass>
+              <mainClass>com.zahid.file.FileHandlingExample</mainClass>
+              <mainClass>com.zahid.serialization.student.printstream.PrintStreamExample</mainClass>
+              <mainClass>com.zahid.serialization.student.printstream.BufferedReaderExample</mainClass>
+              <mainClass>com.zahid.serialization.student.datastream.DataOutputStreamExample</mainClass>
+              <mainClass>com.zahid.serialization.student.datastream.DataInputStreamExample</mainClass>
+              <mainClass>com.zahid.serialization.student.objectstream.ObjectOutputStreamExample</mainClass>
+              <mainClass>com.zahid.serialization.student.objectstream.ObjectInputStreamExample</mainClass>
+              <mainClass>com.zahid.floating.WriteFloatExample</mainClass>
+              <mainClass>com.zahid.floating.ReadFloatExample</mainClass>
+              <mainClass>com.zahid.serialization.customer.SerializeCustomerExample</mainClass>
+              <mainClass>com.zahid.serialization.customer.DeserializeCustomerExample</mainClass>
+              <mainClass>com.zahid.console.ConsoleInputExample</mainClass>
+              <mainClass>com.zahid.file.FileFilterExample</mainClass>
+              <mainClass>com.zahid.file.WorkingDirectory</mainClass>
+              <mainClass>com.zahid.csv.CSVFileReader</mainClass>
+              <mainClass>com.zahid.csv.CSVObjectReader</mainClass>
+          </configuration>
+      </plugin>      
+      
+      <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->        
+      <!-- # Maven Surefire Plugin for JUnit5 --> 
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+      </plugin>
+
+    </plugins> 
+  </pluginManagement>
+
+  <!-- <resources>
+    <resource>
+      <directory>resources</directory>
+    </resource>
+  </resources> -->
+
+</build>
+
+<dependencies>
+  <!-- # Dependency for JUnit5 -->
+    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+  <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>${junit.jupiter.version}</version>
+      <scope>test</scope>
+  </dependency>
+  
+  <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+  <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>${junit.jupiter.version}</version>
+      <scope>test</scope>
+  </dependency>  
+
+  <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+  <dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.22</version>
+    <scope>provided</scope>
+  </dependency>
+  
+</dependencies>
+
+
+</project>

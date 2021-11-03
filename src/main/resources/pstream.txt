@@ -1,0 +1,16 @@
+5
+101
+Alex
+CSE
+102
+Lee
+EEE
+103
+Cooper
+ME
+104
+David
+CE
+105
+John
+CSE
